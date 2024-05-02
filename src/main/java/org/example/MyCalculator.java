@@ -9,7 +9,7 @@ public class MyCalculator {
     }
 
     int diff(int a, int b){
-        return a-b;
+        return b-a;
     }
 
     int div(int a, int b){
