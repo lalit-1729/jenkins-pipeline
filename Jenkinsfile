@@ -1,35 +1,43 @@
-pipeline{
+pipeline
+{
     agent any
-    tools{
+    tools
+    {
         maven 'MAVEN_HOME'
     }
 
-    stages{
-        stage('Welcome Stage'){
+    stages
+    {
+        stage('Welcome Stage')
+        {
             steps{
                 echo 'Welcome to Pipeline'
             }
         }
 
-        stage('Clean Stage'){
+        stage('Clean Stage')
+        {
             steps{
                 bat 'mvn clean'
             }
         }
 
-        stage('Test State'){
+        stage('Test State')
+        {
             steps{
                 bat 'mvn test'
             }
         }
 
-        stage('Build Stage'){
+        stage('Build Stage')
+        {
             steps{
                 bat 'mvn install'
             }
         }
 
-        stage('Complete Stage'){
+        stage('Complete Stage')
+        {
             steps{
                 echo 'Pipeline complete'
             }
