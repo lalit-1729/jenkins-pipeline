@@ -20,6 +20,10 @@ public class MyCalculator {
         return a*b;
     }
 
+    void show(){
+        out.println("This is just a hello world.");
+    }
+
     public static void main(String[] args) {
         MyCalculator myCalculator = new MyCalculator();
 
@@ -27,5 +31,6 @@ public class MyCalculator {
         out.println("The div of " + 10 + " & " + 20 + " is " + myCalculator.div(10, 20));
         out.println("The diff of " + 10 + " & " + 20 + " is " + myCalculator.diff(10, 20));
         out.println("The mult of " + 10 + " & " + 20 + " is " + myCalculator.multiply(10, 20));
+        myCalculator.show();
     }
 }
